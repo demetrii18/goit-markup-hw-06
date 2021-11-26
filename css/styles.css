@@ -979,6 +979,10 @@ form .button {
   display: inline-flex;
 }
 
+.subscribe-field .email + .subscribe-button {
+  margin-left: 12px;
+}
+
 .subscribe-field input {
   width: 358px;
   height: 50px;
