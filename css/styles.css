@@ -959,3 +959,11 @@ form .button {
   color: var(--primary-white-color);
   background-color: #188ce8;
 }
+
+.subscribe {
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
