@@ -966,15 +966,20 @@ form .button {
   text-transform: uppercase;
 
   color: var(--primary-white-color);
+
+  padding-top: 72px;
+  padding-left: 93px;
 }
 
 .subscribe .title {
   margin-bottom: 20px;
 }
 
-.subscribe-field input {
+.subscribe-field {
   display: inline-flex;
+}
 
+.subscribe-field input {
   width: 358px;
   height: 50px;
   padding-top: 15px;
@@ -991,4 +996,16 @@ form .button {
 .subscribe-field input:hover,
 .subscribe-field input:focus {
   border-color: var(--accent-color);
+}
+
+.subscribe-field::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
 }
