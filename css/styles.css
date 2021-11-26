@@ -177,11 +177,6 @@ header {
   transition: fill 250ms var(--animation-style);
 }
 
-/* .contact-nav .mail-icon:hover,
-.contact-nav .mail-icon:focus {
-  fill: var(--accent-color);
-} */
-
 /* ТЕЛО */
 /* Настройка свойств блока героя */
 .hero {
@@ -215,6 +210,7 @@ header {
   text-align: center;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -870,4 +866,96 @@ header {
 .close-button:hover .close-icon,
 .close-button:focus .close-icon {
   fill: var(--accent-color);
+}
+
+textarea {
+  resize: none;
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: var(--title-text-color);
+  margin-bottom: 12px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+.comment-field {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.comment-field label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+
+  margin-bottom: 4px;
+}
+
+.comment-field textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.comment-field textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+
+  padding: 12px 16px;
+}
+
+.form-field label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+
+  margin-bottom: 4px;
+}
+
+.form-field input {
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.agree {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form .button:hover,
+.form .button:focus {
+  color: var(--primary-white-color);
+  background-color: #188ce8;
 }

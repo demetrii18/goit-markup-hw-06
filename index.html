@@ -378,13 +378,42 @@
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            
-                <button type="button" class="close-button" data-modal-close>
-                        <svg class="close-icon">
-                            <use href="./images/close.svg#close"></use>
-                        </svg>
-                </button>
+        <div class="modal"> 
+            <button type="button" class="close-button" data-modal-close>
+                    <svg class="close-icon">
+                        <use href="./images/close.svg#close"></use>
+                    </svg>
+            </button>
+            <form class="form js-speaker-form">
+                <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                
+                <div class="form-field">
+                    <label for="name">Имя</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                
+                <div class="form-field">
+                    <label for="tel">Телефон</label>
+                    <input type="text" name="tel" id="tel">
+                </div>
+                
+                <div class="form-field">
+                    <label for="mail">Почта</label>
+                    <input type="mail" name="mail" id="mail">
+                </div>
+                
+                <div class="comment-field">
+                    <label for="comment">Комментарий</label>
+                    <textarea name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+                </div>
+                
+                <div class="agree">
+                    <input type="checkbox" name="agree" id="agree">
+                    <label for="agree">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+                </div>
+                
+                <button type="submit" class="button"> Отправить</button>
+            </form>
             
         </div>
     </div>
