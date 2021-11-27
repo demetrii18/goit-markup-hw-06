@@ -997,8 +997,8 @@ form .button {
   color: var(--primary-white-color);
 }
 
-.subscribe-field input:hover,
-.subscribe-field input:focus {
+.email:hover,
+.email:focus {
   border-color: var(--accent-color);
 }
 
@@ -1009,7 +1009,6 @@ form .button {
 
   display: flex;
   align-items: center;
-  letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
 }
