@@ -657,6 +657,20 @@ header {
   background-color: var(--accent-color);
 }
 
+.subscribe-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--primary-white-color);
+  margin-left: 10px;
+
+  transition: fill 250ms var(--animation-style);
+}
+
+.subscribe-button:hover .subscribe-icon,
+.subscribe-button:focus .subscribe-icon {
+  fill: var(--accent-color);
+}
+
 /* Контент вкладки "Портфолио" */
 .filter-buttons {
   display: flex;
@@ -981,6 +995,12 @@ form .button {
 
 .subscribe-field .email + .subscribe-button {
   margin-left: 12px;
+}
+
+.subscribe-button-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .email {
