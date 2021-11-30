@@ -874,7 +874,7 @@ header {
   transform: translate(-50%, -50%);
   width: 11px;
   height: 11px;
-  fill: #000000;
+  fill: var(--primary-black-color);
 }
 
 .close-button:hover .close-icon,
@@ -902,16 +902,16 @@ textarea {
   display: flex;
   flex-direction: column;
 
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin-bottom: 10px;
 }
 
 .comment-field {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin-bottom: 20px;
 }
 
@@ -929,6 +929,11 @@ textarea {
 .comment-field textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
+}
+
+.comment-field textarea:focus {
+  border-color: var(--accent-color);
 }
 
 .comment-field textarea::placeholder {
@@ -957,6 +962,8 @@ textarea {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding-left: 42px;
+  outline: none;
 }
 
 .name-icon {
@@ -964,16 +971,30 @@ textarea {
   top: 0;
   left: 0;
 
-  background-image: url('./images/icons.svg#person-icon');
+  display: inline-block;
   width: 18px;
   height: 18px;
+  margin-top: 29px;
+  margin-left: 52px;
 
   fill: var(--primary-black-color);
+}
+
+.form-field input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-field input:focus + .name-icon {
+  fill: var(--accent-color);
 }
 
 .agree {
   text-align: center;
   margin-bottom: 30px;
+}
+
+.agree a {
+  color: var(--accent-color);
 }
 
 form .button {

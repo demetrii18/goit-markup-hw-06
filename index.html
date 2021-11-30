@@ -427,18 +427,26 @@
           <label class="form-field">
             <span class="form-field-text">Имя</span>
             <input type="text" name="name" />
-            <span class="name-icon"></span>
+            <svg class="name-icon">
+              <use href="./images/icons.svg#person-icon"></use>
+            </svg>
           </label>
 
-          <div class="form-field">
-            <label for="tel">Телефон</label>
-            <input type="text" name="tel" id="tel" />
-          </div>
+          <label class="form-field">
+            <span class="form-field-text">Телефон</span>
+            <input type="tel" name="tel" />
+            <svg class="name-icon">
+              <use href="./images/icons.svg#phone-icon"></use>
+            </svg>
+          </label>
 
-          <div class="form-field">
-            <label for="mail">Почта</label>
-            <input type="mail" name="mail" id="mail" />
-          </div>
+          <label class="form-field">
+            <span class="form-field-text">Почта</span>
+            <input type="mail" name="mail" />
+            <svg class="name-icon">
+              <use href="./images/icons.svg#email-icon"></use>
+            </svg>
+          </label>
 
           <div class="comment-field">
             <label for="comment">Комментарий</label>
@@ -448,8 +456,8 @@
           <div class="agree">
             <input type="checkbox" name="agree" id="agree" />
             <label for="agree"
-              >Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label
-            >
+              >Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+              </label>
           </div>
 
           <button type="submit" class="button">Отправить</button>
