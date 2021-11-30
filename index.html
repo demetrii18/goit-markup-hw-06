@@ -448,17 +448,16 @@
             </svg>
           </label>
 
-          <div class="comment-field">
-            <label for="comment">Комментарий</label>
-            <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
-          </div>
+          <label class="comment-field">
+            <span class="comment-field-text">Комментарий</span> 
+            <textarea class="comment" name="comment" id="comment" rows="6" placeholder="Введите текст"></textarea>
+          </label>
 
-          <div class="agree">
-            <input type="checkbox" name="agree" id="agree" />
-            <label for="agree"
-              >Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
-              </label>
-          </div>
+          <label class="agree">
+            <input class="checkbox" type="checkbox" name="agree" />
+            <span class="agree-icon"></span>
+            <span class="agree-text">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></span>
+          </label>
 
           <button type="submit" class="button">Отправить</button>
         </form>
