@@ -849,7 +849,9 @@ header {
 }
 
 .close-button {
-  position: fixed;
+  position: absolute;
+  top: 0;
+  right: 0;
 
   width: 30px;
   height: 30px;
@@ -858,7 +860,7 @@ header {
   box-sizing: border-box;
   border-radius: 50%;
 
-  margin-left: calc(100% - 38px);
+  margin-right: 8px;
   margin-top: 8px;
   padding: 0;
 }
