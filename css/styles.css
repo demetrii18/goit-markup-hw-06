@@ -9,7 +9,7 @@
   --primary-button-bg-color: #f5f4fa;
   --primary-border-color: #ececec;
   --primary-icon-color: #afb1b8;
-  --animation-style: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-style: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Свойства всей страницы */
@@ -141,7 +141,7 @@ header {
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  transition: color 250ms var(--animation-style);
+  transition: color var(--animation-style);
 }
 
 .item > .link:hover,
@@ -165,7 +165,7 @@ header {
   margin-right: 10px;
   fill: var(--primary-text-color);
 
-  transition: fill 250ms var(--animation-style);
+  transition: fill var(--animation-style);
 }
 
 .tel-icon {
@@ -174,7 +174,7 @@ header {
   margin-right: 10px;
   fill: var(--primary-text-color);
 
-  transition: fill 250ms var(--animation-style);
+  transition: fill var(--animation-style);
 }
 
 /* ТЕЛО */
@@ -226,7 +226,7 @@ header {
   width: 200px;
   height: 50px;
 
-  transition: color 250ms var(--animation-style), background-color 250ms var(--animation-style);
+  transition: color var(--animation-style), background-color var(--animation-style);
 }
 
 .button:hover,
@@ -251,8 +251,8 @@ header {
   box-shadow: none;
   border-radius: 4px;
 
-  transition: color 250ms var(--animation-style), background-color 250ms var(--animation-style),
-    box-shadow 250ms var(--animation-style);
+  transition: color var(--animation-style), background-color var(--animation-style),
+    box-shadow var(--animation-style);
 }
 
 .portfolio-button:hover,
@@ -430,7 +430,7 @@ header {
   border-radius: 50%;
   background-color: var(--primary-white-color);
 
-  transition: background-color 250ms var(--animation-style);
+  transition: background-color var(--animation-style);
 }
 
 .icon-team {
@@ -439,7 +439,7 @@ header {
   margin: 12px;
   fill: rgba(175, 177, 184, 1);
 
-  transition: fill 250ms var(--animation-style);
+  transition: fill var(--animation-style);
 }
 
 .colladge .item:not(:last-child) {
@@ -476,13 +476,13 @@ header {
   box-sizing: border-box;
   border-radius: 4px;
 
-  transition: color 250ms var(--animation-style);
+  transition: color var(--animation-style);
 }
 
 .client-icon {
   fill: rgba(175, 177, 184, 1);
 
-  transition: fill 250ms var(--animation-style);
+  transition: fill var(--animation-style);
 }
 
 .client-icon.group1 {
@@ -562,6 +562,7 @@ header {
 
 .footer > .container {
   display: flex;
+  justify-content: center;
 }
 
 .conection {
@@ -642,7 +643,7 @@ header {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 
-  transition: background-color 250ms var(--animation-style);
+  transition: background-color var(--animation-style);
 }
 
 .icon-join {
@@ -663,7 +664,7 @@ header {
   fill: var(--primary-white-color);
   margin-left: 10px;
 
-  transition: fill 250ms var(--animation-style);
+  transition: fill var(--animation-style);
 }
 
 .subscribe-button:hover .subscribe-icon,
@@ -699,7 +700,7 @@ header {
   margin-bottom: 30px;
   box-shadow: none;
 
-  transition: box-shadow 250ms var(--animation-style);
+  transition: box-shadow var(--animation-style);
 }
 
 .filter .item:nth-child(3n) {
@@ -791,7 +792,7 @@ header {
   background: rgba(33, 150, 243, 0.9);
 
   transform: translateY(calc(100% + 1px));
-  transition: transform 250ms var(--animation-style);
+  transition: transform var(--animation-style);
 }
 
 .posters .posters-descr-text {
@@ -809,7 +810,7 @@ header {
   color: var(--primary-white-color);
 
   transform: translateY(100%);
-  transition: transform 250ms var(--animation-style);
+  transition: transform var(--animation-style);
 }
 
 .item .link:hover .posters::before,
@@ -848,7 +849,7 @@ header {
 }
 
 .close-button {
-  position: relative;
+  position: fixed;
 
   width: 30px;
   height: 30px;
@@ -857,7 +858,6 @@ header {
   box-sizing: border-box;
   border-radius: 50%;
 
-  display: inline-block;
   margin-left: calc(100% - 38px);
   margin-top: 8px;
   padding: 0;
@@ -874,13 +874,24 @@ header {
   fill: var(--primary-black-color);
 }
 
+.close-button:hover,
+.close-button:focus {
+  cursor: pointer;
+}
+
 .close-button:hover .close-icon,
 .close-button:focus .close-icon {
   fill: var(--accent-color);
+
+  transition: fill var(--animation-style);
 }
 
 textarea {
   resize: none;
+}
+
+.form {
+  padding: 40px 39px 40px 41px;
 }
 
 .form-title {
@@ -899,16 +910,13 @@ textarea {
   display: flex;
   flex-direction: column;
 
-  padding-left: 40px;
-  padding-right: 40px;
   margin-bottom: 10px;
 }
 
 .comment-field {
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
-  padding-right: 40px;
+
   margin-bottom: 20px;
 }
 
@@ -936,6 +944,8 @@ textarea {
 
 .comment-field textarea:focus {
   border-color: var(--accent-color);
+
+  transition: border-color var(--animation-style);
 }
 
 .comment-field textarea::placeholder {
@@ -964,17 +974,21 @@ textarea {
   width: 18px;
   height: 18px;
   margin-top: 29px;
-  margin-left: 52px;
+  margin-left: 12px;
 
   fill: var(--primary-black-color);
 }
 
 .form-field input:focus {
   border-color: var(--accent-color);
+
+  transition: border-color var(--animation-style);
 }
 
 .form-field input:focus + .name-icon {
   fill: var(--accent-color);
+
+  transition: fill var(--animation-style);
 }
 
 .agree {
@@ -996,6 +1010,7 @@ textarea {
   height: 15px;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .agree .checkbox:checked + .agree-icon {
@@ -1019,7 +1034,7 @@ textarea {
   color: var(--accent-color);
 }
 
-form .button {
+.form .button {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1028,10 +1043,15 @@ form .button {
 .form .button:hover,
 .form .button:focus {
   color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  background-color: #188ce8;
+
+  transition: background-color var(--animation-style);
 }
 
 .subscribe {
+  display: flex;
+  flex-direction: column;
+
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
@@ -1050,7 +1070,7 @@ form .button {
   display: inline-flex;
 }
 
-.subscribe-field .email + .subscribe-button {
+.subscribe-field .sub-label + .subscribe-button {
   margin-left: 12px;
 }
 
@@ -1077,6 +1097,8 @@ form .button {
 
 .email:focus {
   border-color: var(--accent-color);
+
+  transition: border-color var(--animation-style);
 }
 
 .subscribe-field::placeholder {
